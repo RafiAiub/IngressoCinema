@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/style.css">
+  <script src="scripts/index.js" defer></script>
+  <title>Ingressos</title>
+</head>
+<body>
+<header class="header">
+  <h2 class="ingresso">Ingressos</h2>
+  <button class="button">
+    Carrinho
+  </button>
+</header>
+<!-- aqui está a tag para formatação prinipal da tela 'container'-->
+<div class="container">
+  <div>
+    <img src="images/AVATAR.jpg" alt="avatr" class="imagem">
+  </div>
+  <div>
+    <h1>Avatar 2</h1>
+    <p>Horarios:</p>
+    <p>11h00</p>
+    <p>17h00</p><br>
+    <p>Valores:</p>
+    <p>R$ 30,00 (Inteira)</p>
+    <p>R$ 15,00 (meia-entrada)</p>
+  </div>
+  <div>
+    <img src="./images/GATO DE BOTAS.jpg" alt="gatoDeBotas" class="imagem">
+  </div>
+  <div>
+    <h1>Gato de Botas 2</h1>
+    <p>Horarios:</p>
+    <p>14h00</p>
+    <p>21h00</p><br>
+    <p>Valores:</p>
+    <p>R$ 30,00 (Inteira)</p>
+    <p>R$ 15,00 (meia-entrada)</p>
+  </div>
+  <div class="inf">
+    <h1>Compre aqui</h1><br>
+      Escolha o filme:
+      <select name="filmes" id="filmes">
+          <option value="filmes">Avatar 2</option>
+          <option value="filmes">Gato de botas 2</option>
+      </select><br><br>
+      Escolha uma data:
+      <input type="date" id="dataFilme"><br><br>
+      Escolha um horario:
+      <input type="time" id="horaFilme"><br><br>
+      Tipo de ingresso:
+      <select name="tipoDeIngresso" id="tipoDeIngresso">
+          <option value="inteira">Inteira (R$ 30,00)</option>
+          <option value="meia">Meia-entrada(R$ 15,00)</option>
+      </select><br><br>
+      Seu CPF:
+      <input type="number" id="cpf">
+      <br><br>
+      <div>
+        <input type="button" value="Confirmar" id="btnConfirmar" class="button">
+      </div>
+  </div>
+</div>
+</html>
